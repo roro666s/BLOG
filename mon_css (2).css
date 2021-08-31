@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Centrer le titre du blog */
+body { 
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+/* Positionner au centre le texte d'introduction */
+.intro {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Mettre en bleu la couleur des types d'articles */
+h2 {
+    color: deepskyblue;
+}
+
+
+p {
+    font-family: Poppins, sans-serif;
+}
+
+img {
+    max-width: 100%;
+
+}
+/* Mises a 0 des marges sur les côtés */
+.blog {
+    margin: 0 auto;  
+}
+
+/* Effet de flottement des articles*/
+.articles {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Effet de flottement comme aperçu dans le sujet 
+.blog:after {
+    clear: both;
+    content: "";
+    display: table;
+}*/
+
+
+/* Alignement a gauche des elements, ombre de la boite, couleur gris en fond et marge interne
+de 16px pour laisser un espace */
+.box {
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    background-color: #f1f1f1;
+}
+
+
+
+/* Partie responsive, ou les articles passent en colonnes quand la résolution est inférieur à 1000px */
+@media screen and (max-width: 1000px) {
+  .articles {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    
+  }
+}
+
+/* border-radius pour avoir des images rondes */
+.avatar {
+    border-radius: 50%;
+    max-width:10%;
+}
+
+/* mettre les infos de l'auteur à côté de sa photo */
+.auteur {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 0px 16px;
+  
+}
+
+.auteur .auteur-nom {
+    padding: 0 24px;  
+}
